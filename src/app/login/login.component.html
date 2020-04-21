@@ -1,0 +1,72 @@
+  <section class="body-sign">
+    <div class="center-sign">
+  
+      <!-- <h1 style="text-align: center;">{{ title }}</h1> -->
+  
+        <a href="https://merchantwest.co.za/" class="logo pull-left">
+            <img src="assets/images/MWLogo.png" height="75" alt="Merchant West" />
+        </a>
+        <div class="panel panel-sign">
+            <div class="panel-title-sign mt-xl text-right">
+                <h2 class="title text-uppercase text-bold m-none"><i class="fa fa-user mr-xs"></i> Sign In</h2>
+            </div>
+            <div class="panel-body">
+                <!-- <form> -->
+
+                    <mat-form-field appearance="fill" style="display: block;">
+                        <mat-label>Username</mat-label>
+                        <input [(ngModel)]="UserName" matInput >
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" style="display: block;">
+                        <mat-label>Password</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="UserPassword">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                      </mat-form-field>
+
+                      <a href="" class="pull-right">Lost Password?</a>
+  
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <button type="submit" class="btn btn-primary hidden-xs" style="width:200px" (click)="portalLogin()">Login</button>
+                            <button type="submit" class="btn btn-primary btn-block btn-lg visible-xs mt-lg" style="width:200px" (click)="portalLogin()">Login</button>
+
+                            <!-- <input type="button" value="Login" (click)="navigate()" /> -->
+
+                            <!-- <button mat-raised-button color="primary" (click)="navigate()">Login</button> --> 
+                        </div> 
+                    </div>
+  
+                    <span class="mt-lg mb-lg line-thru text-center text-uppercase">
+                        <span>or</span>
+                    </span>
+
+                    <!-- Send email to Administrator to add user to email group -->
+                    <p class="text-center">Don't have an account yet?<a href="">Sign Up!</a>
+                <!-- </form> -->
+            </div>
+        </div>
+
+
+
+        <footer>
+            <p class="text-center text-muted mt-md mb-md">&copy; Copyright <img src="assets/images/ProSolutions.png" height="22" style="margin: 0; padding-left: 5px;padding-right: 5px;vertical-align: text-top;" /> @DateTime.Now.Year. All Rights Reserved.</p>
+        </footer>
+    </div>
+  </section>
+
+  <h3>XML DATA FROM ICON</h3>
+  <div class="container">    
+    <table class="table table-bordered table-hover">    
+      <tr>    
+        <th>Code</th>    
+        <th>Desc</th>    
+      </tr>    
+      <tr *ngFor="let item of xmlItems">    
+        <td>{{item.ResultCode}}</td>    
+        <td>{{item.ResultDescription}}</td>   
+      </tr>    
+    </table>    
+  </div> 

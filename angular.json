@@ -24,9 +24,57 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "src/assets/vendor/bootstrap/css/bootstrap.css",
+              "src/assets/vendor/font-awesome/css/font-awesome.css",
+              "src/assets/vendor/magnific-popup/magnific-popup.css",
+              "src/assets/vendor/bootstrap-datepicker/css/datepicker3.css",
+              "src/assets/vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css",
+              "src/assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css",
+              "src/assets/vendor/morris/morris.css",
+              "src/assets/stylesheets/theme.css",
+              "src/assets/stylesheets/skins/default.css",
+              "src/assets/stylesheets/theme-custom.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/vendor/modernizr/modernizr.js",
+              "src/assets/vendor/jquery/jquery.js",
+              "src/assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js",
+              "src/assets/vendor/bootstrap/js/bootstrap.js",
+              "src/assets/vendor/nanoscroller/nanoscroller.js",
+              "src/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js",
+              "src/assets/vendor/magnific-popup/magnific-popup.js",
+              "src/assets/vendor/jquery-placeholder/jquery.placeholder.js",
+              "src/assets/vendor/jquery-ui/js/jquery-ui-1.10.4.custom.js",
+              "src/assets/vendor/jquery-ui-touch-punch/jquery.ui.touch-punch.js",
+              "src/assets/vendor/jquery-appear/jquery.appear.js",
+              "src/assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js",
+              "src/assets/vendor/jquery-easypiechart/jquery.easypiechart.js",
+              "src/assets/vendor/flot/jquery.flot.js",
+              "src/assets/vendor/flot-tooltip/jquery.flot.tooltip.js",
+              "src/assets/vendor/flot/jquery.flot.pie.js",
+              "src/assets/vendor/flot/jquery.flot.categories.js",
+              "src/assets/vendor/flot/jquery.flot.resize.js",
+              "src/assets/vendor/jquery-sparkline/jquery.sparkline.js",
+              "src/assets/vendor/raphael/raphael.js",
+              "src/assets/vendor/morris/morris.js",
+              "src/assets/vendor/gauge/gauge.js",
+              "src/assets/vendor/snap-svg/snap.svg.js",
+              "src/assets/vendor/liquid-meter/liquid.meter.js",
+              "src/assets/vendor/jqvmap/jquery.vmap.js",
+              "src/assets/vendor/jqvmap/data/jquery.vmap.sampledata.js",
+              "src/assets/vendor/jqvmap/maps/jquery.vmap.world.js",
+              "src/assets/vendor/jqvmap/maps/continents/jquery.vmap.africa.js",
+              "src/assets/vendor/jqvmap/maps/continents/jquery.vmap.asia.js",
+              "src/assets/vendor/jqvmap/maps/continents/jquery.vmap.australia.js",
+              "src/assets/vendor/jqvmap/maps/continents/jquery.vmap.europe.js",
+              "src/assets/vendor/jqvmap/maps/continents/jquery.vmap.north-america.js",
+              "src/assets/vendor/jqvmap/maps/continents/jquery.vmap.south-america.js",
+              "src/assets/javascripts/theme.js",
+              "src/assets/javascripts/theme.custom.js",
+              "src/assets/javascripts/theme.init.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -88,6 +136,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +168,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "MWPortal"
 }
